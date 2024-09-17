@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.first-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+.sub-header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97vw;
+    margin: auto;
+}
+.logo-btn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.youtube-logo{
+    width: 150px;
+    height: 70px;
+}
+.youtube-logo img{
+    width: 100%;
+    height: 100%;
+}
+.bar-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #030303;
+    border-radius: 50%;
+    border: none;
+    background: none;
+}
+.bar-btn:hover, .search-btn:hover, .notification button:hover, .speaker-btn:hover{
+    background-color: #f0f0f0;
+}
+.search-section{
+    display: flex;
+    align-items: center;
+}
+.search-section form{
+    position: relative;
+    border: 2px groove;
+    width: 40vw;
+    border-radius: 30px;
+}
+.search-section form input{
+    padding: 10px 25px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+}
+.search-section form input:hover{
+    outline: none;
+}
+.search-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(107, 106, 106);
+    border: none;
+    border-left: 1px groove;
+    background-color: #f8f8f8;
+    border-top-right-radius: 900px;    
+    border-bottom-right-radius: 900px;
+    cursor: pointer;    
+
+}
+.notification button, .speaker-btn{
+    padding: 2px 10px;
+    font-family: 400;
+    font-size: 17px;
+    line-height: 36px;
+    color: rgb(58, 56, 56);
+    border-radius: 50%;
+    border: none;
+    margin-left: .7rem;
+    cursor: pointer;
+}
+.speaker-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+}
+.notification button{
+    background: none;
+    font-size: 20px;
+    color: rgb(72, 71, 71);
+}
+.head-btn{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    .head-btn{
+        display: inline;
+    }
+    .search-section, .notify{
+        display: none;
+    }
+}
+.categories-section{
+    position: fixed;
+    top: 4rem;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+.categories{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.category-btn{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0f0f0f;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+    word-wrap: none;
+    white-space: nowrap;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: #E7E7E7;
+    text-decoration: none;
+}
+.category-btn:hover{
+    background-color: #DDD;
+}
+.category-btn.active{
+    background-color: #606060;
+    color: white;
+    border-color: #EEE;
+}
+.second-section{
+    margin-top: 10rem;
+}
+.video-frame{
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    background-color: #AAA;
+    border-radius: 20px;
+}
+.video-frame video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.profile-image{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #AAA;
+}
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.video-description{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+.video-artical{
+    display: flex;
+    flex-direction: column;
+}
+.videos{
+    padding: 1rem;
+    border-radius: 20px;
+    transition: background-color 0.5s;
+}
+.videos:hover{
+    background-color: #DDE8EB;
+}
+.video-artical a{
+    text-decoration: none;
+}
+.video-title{
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #0f0f0f;
+}
+.channel-name{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #0f0f0f;
+}
+.video-view{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    color: #606060;
+}
+.youtube-videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90vw;
+    margin: auto;
+}
+@media screen and (max-width:1300px) {
+    .youtube-videos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}    
+@media screen and (max-width:980px) {
+    .youtube-videos{
+        grid-template-columns: 1fr 1fr ;
+    }
+}    
+@media screen and (max-width:600px) {
+    .youtube-videos{
+        grid-template-columns: 1fr;
+    }
+    .videos{
+        padding: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    .video-description{
+        margin-top: 1rem;
+    }
+    .video-frame{
+        border-radius: 10px;
+        padding: 0;
+        height: 250px;
+    }
+    .video-frame video{
+        border-radius: 10px;
+        width: 100%;
+        object-fit: cover;
+    }
+}    
+
+.shorts-video{
+    width: 270px;
+    border-radius: 20px;
+}
+.shorts-video video{
+    border-radius: 20px;
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+}
+.shorts-description{
+    padding: 10px;
+    padding-top: 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.shorts-description span{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0f0f0f;
+}
+.short-view{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #606060;
+}
+.shorts-frame{
+    transition: background-color 0.5s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.shorts-frame:hover{
+    background-color: #E5E5E5;
+}
+.shorts-video-cont{
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.shorts-section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90vw;
+    margin: auto;
+}
+.short-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.short-header h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #030303;
+}
+.short-header button{
+    font-size: 50px;
+    font-weight: 100;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #606060;
+}
