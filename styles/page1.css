@@ -234,6 +234,12 @@
         height: 40vh;
     }
 }
+@media screen and (max-width:400px) {
+    .video-btns{
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+}
 
 .add-comment{
     display: flex;
