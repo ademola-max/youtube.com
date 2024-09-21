@@ -119,6 +119,16 @@
     .search-section, .notify{
         display: none;
     }
+    .logo-btn{
+        display: flex;
+        align-items: center;
+        gap: 0;
+    }
+}
+@media screen and (max-width:380px) {
+    .notify2{
+        display: none;
+    }
 }
 .main-video{
     width: 100%;
@@ -132,6 +142,16 @@
     border-radius: 15px;
 }
 .video-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    color: #0f0f0f;
+    margin-top: 10px;
+    word-wrap: none;
+    white-space: nowrap;
+}
+.main-video-title{
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
@@ -162,6 +182,8 @@
     font-style: normal;
     line-height: 18px;
     color: #606060;
+    word-wrap: none;
+    white-space: nowrap;
 }
 .video-discription button{
     padding: 0 15px;
@@ -235,9 +257,15 @@
     }
 }
 @media screen and (max-width:400px) {
-    .video-btns{
-        overflow-x: scroll;
-        scrollbar-width: none;
+    .video-btns button{
+        padding: 0 10px;
+        word-spacing: 0;
+    }
+}
+@media screen and (max-width:370px) {
+    .video-btns button{
+        padding: 0 5px;
+        word-spacing: 0;
     }
 }
 
@@ -352,7 +380,7 @@
 .videos{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: .3rem;
 }
 .video-frame{
     width: 280px;
@@ -374,13 +402,15 @@
     margin-top: 0;
 }
 .shorts-video{
-    width: 230px;
+    width: 200px;
+    height: 300px;
     border-radius: 20px;
 }
 .shorts-video video{
     border-radius: 20px;
     width: 100%;
-    height: 90%;
+    height: 100%;
+    object-fit: cover;
     padding: 10px;
 }
 .shorts-description{

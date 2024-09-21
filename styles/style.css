@@ -119,6 +119,16 @@
     .search-section, .notify{
         display: none;
     }
+    .logo-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media screen and (max-width:380px) {
+    .notify2{
+        display: none;
+    }
 }
 .categories-section{
     position: fixed;
@@ -169,7 +179,7 @@
     width: 100%;
     height: 200px;
     padding: 0;
-    background-color: #AAA;
+    /* background-color: #AAA; */
     border-radius: 20px;
 }
 .video-frame video{
