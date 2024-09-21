@@ -258,17 +258,10 @@
 }
 @media screen and (max-width:400px) {
     .video-btns button{
-        padding: 0 10px;
-        word-spacing: 0;
-    }
-}
-@media screen and (max-width:370px) {
-    .video-btns button{
         padding: 0 5px;
         word-spacing: 0;
     }
 }
-
 .add-comment{
     display: flex;
     gap: 1rem;
