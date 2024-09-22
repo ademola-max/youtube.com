@@ -292,6 +292,11 @@
         display: none;
     }
 }
+@media screen and (max-width:600px) {
+    .home-video{
+        width: 100%;
+    }
+}
 .video-section{
     width: 90vw;
     margin: auto;
