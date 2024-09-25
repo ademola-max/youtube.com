@@ -272,4 +272,7 @@ html{
     .video-frame{
         width: 100%;
     }
+    .shorts-section{
+        margin-bottom: 0;
+    }
 }
