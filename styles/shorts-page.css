@@ -10,6 +10,7 @@
     top: 0;
     background-color: #ffffff;
     z-index: 1000;
+    display: none;
 }
 .sub-header1{
     display: flex;
@@ -266,10 +267,5 @@ html{
 @media screen and (max-width:450px) {
     .video-frame{
         width: 100%;
-    }
-}
-@media screen and (max-width:330px) {
-    .video-frame{
-        width: 300px;
     }
 }
