@@ -125,7 +125,7 @@
         align-items: center;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .first-header{
         display: none;
     }
@@ -268,7 +268,7 @@ html{
         color: #ffffff;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .video-frame{
         width: 100%;
     }
