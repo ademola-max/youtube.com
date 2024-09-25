@@ -10,7 +10,6 @@
     top: 0;
     background-color: #ffffff;
     z-index: 1000;
-    display: none;
 }
 .sub-header1{
     display: flex;
@@ -124,6 +123,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+@media screen and (max-width:400px) {
+    .first-header{
+        display: none;
     }
 }
 @media screen and (max-width:380px) {
@@ -264,7 +268,7 @@ html{
         color: #ffffff;
     }
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:400px) {
     .video-frame{
         width: 100%;
     }
