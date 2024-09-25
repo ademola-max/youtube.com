@@ -175,11 +175,10 @@
 }
 .video-frame{
     width: 350px;
-    height: 90vh;
+    height: 100%;
     position: relative;
     background-color: black;
     border-radius: 15px;
-    border: 1px solid green;
 }
 .video-frame video{
     width: 100%;
@@ -236,12 +235,21 @@
 .section{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    width: 90vw;
     margin: auto;
+    gap: .5rem;
+    margin-top: 5rem;
 }
 .btns-phone{
     display: none;
+}
+html{
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 10rem;
+}
+section{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 90vh;
 }
 @media screen and (max-width:550px) {
     .btns-phone{
@@ -262,6 +270,11 @@
     }
     .btns-frame span{
         color: #ffffff;
+    }
+}
+@media screen and (max-width:400px) {
+    .video-frame{
+        width: 100%;
     }
 }
 @media screen and (max-width:330px) {
