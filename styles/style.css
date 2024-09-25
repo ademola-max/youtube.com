@@ -300,7 +300,8 @@
     gap: 1rem;
     flex-direction: column;
 }
-.shorts-description span{
+.shorts-description a{
+    text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
