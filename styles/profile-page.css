@@ -121,8 +121,13 @@
     }
     .logo-btn{
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 0;
+    }
+}
+@media screen and (max-width:450px) {
+    .first-header{
+        display: none;
     }
 }
 @media screen and (max-width:380px) {
@@ -130,171 +135,77 @@
         display: none;
     }
 }
-.channel-banner{
-    width: 90vw;
-    height: 23vh;
-    margin: auto;
-    border-radius: 15px;
+.first-section{
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
-.channel-banner img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
-@media screen and (max-width:900px) {
-    .channel-banner{
-        height: 20vw;
-    }
-}
-@media screen and (max-width:600px) {
-    .channel-banner{
-        height: 17vw;
-    }
-}
-.channel-profile{
-    border-radius: 900px;
-}
-.channel-profile img{
-    border-radius: 900px;
-}
-.channel{
-    width: 90vw;
-    margin: auto;
-}
-.sec-channel{
+.profile-image{
+    width: 100px;
+    height: 100px;
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #689F39;
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
 }
-.profile-disc h1{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 50px;
-    font-style: normal;
-    color: #0f0f0f;
-}
-.profile-disc p{
+.others a{
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 25px;
-    font-style: normal;
+    line-height: 40px;
     color: #606060;
+    line-height: 30px;
 }
-.profile-disc button, .channel button{
+.others a:hover{
+    color: #0f0f0f;
+}
+.btns button{
+    background-color: #f2f2f2;
+    font-size: 12px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 36px;
-    font-style: normal;
-    color: #ffffff;
-    padding: 0 15px;
-    background-color: #030303;
+    line-height: 29px;
+    color: #0f0f0f;
     border: none;
+    cursor: pointer;
     border-radius: 30px;
-    cursor: pointer;
+    padding: 0 10px;
 }
-.channel-btn{
-    width: 100%;
-    display: none;
-    margin-top: .5rem;
+.btns button:hover{
+    background-color: #e0e0e0;
 }
-.channel-secetion{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.phone{
-    display: none;
-}
-@media screen and (max-width:700px) {
-    .sec-channel button, .tab{
-        display: none;
-    }
-    .channel-btn, .phone{
-        display: block;
-    }
-}
-.list-section{
-    border-bottom: 1px groove;
-    margin-bottom: 1rem;
-}
-.list-section ul{
-    width: 90vw;
-    overflow-x: scroll;
-    scrollbar-width: none;
-    margin: auto;
-    display: flex;
-    gap: 2rem;
-}
-.list-section ul li{
-    list-style-type: none;
-    padding: 0 0 10px 0;
-    cursor: pointer;
-}
-.list-section ul li:hover{
-    border-bottom: 2px solid #0f0f0f;
-    padding-bottom: 8px;
-}
-.list-section ul li a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 22px;
+.others h1{
+    font-size: clamp(1.2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 40px;
     color: #0f0f0f;
     word-wrap: none;
     white-space: nowrap;
 }
-.home{
+.user-disc{
     display: flex;
-    gap: 1rem;
+    gap: .7rem;
     width: 90vw;
     margin: auto;
-    border-bottom: 1px groove;
-    padding-bottom: 2rem;
 }
-.home-video{
-    width: 400px;
-    height: 220px;
-    border-radius: 15px;
+.btn-phone{
+    display: none;
 }
-.home-video video{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-.home-article h2{
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
-    color: #0f0f0f;
-    padding-bottom: 10px;
-}
-.home-article div{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #606060;
-}
-.home-article p{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #0f0f0f;
-    padding-top: 10px;
-}
-#home{
-    margin-bottom: 2rem;
-}
-@media screen and (max-width:900px) {
-    .home{
-        flex-direction: column;
-    }
-    .home-article p{
+@media screen and (max-width:700px) {
+    .btn-pc{
         display: none;
     }
-}
-@media screen and (max-width:600px) {
-    .home-video{
+    .btn-phone{
+        width: 90vw;
+        margin: auto;
+        display: block;
+        display: flex;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+    .btn-phone button{
         width: 100%;
     }
 }
@@ -362,74 +273,25 @@
     display: flex;
     justify-content: space-between;
 }
-#videos, #for-you, #playlist{
-    margin-bottom: 2rem;
+#video{
+    margin-bottom: 3rem;
 }
-.shorts-video{
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-.shorts-video video{
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 10px;
-}
-.shorts-description{
-    padding: 10px;
-    padding-top: 0;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-}
-.shorts-description span{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    color: #0f0f0f;
-}
-.short-view{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #606060;
-}
-.shorts-frame{
-    transition: background-color 0.5s;
-    border-radius: 15px;
-    cursor: pointer;
-}
-.shorts-frame:hover{
-    background-color: #E5E5E5;
-}
-.shorts-video-cont{
-    display: flex;
-    overflow-x: scroll;
-    scrollbar-width: none;
-}
-.short-header{
+.video-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem; 
 }
-.short-header h1{
-    font-size: 30px;
-    font-weight: 700;
-    color: #030303;
-}
-.short-header button{
-    font-size: 50px;
-    font-weight: 100;
+.video-header button{
+    border: 2px groove;
+    padding: 10px 15px;
     background: none;
-    border: none;
+    border-radius: 30px;
+    color: #0f0f0f;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
-    color: #606060;
 }
-.shorts-section{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 90vw;
-    margin: auto;
+.video-header button:hover{
+    background-color: #f2f2f2;
 }
