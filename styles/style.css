@@ -290,6 +290,16 @@
         border-radius: 0;
         height: 220px;
     }
+    .video-frame video{
+        border-radius: 0;
+    }
+    .videos{
+        padding: 0;
+        width: 100%;
+    }
+    .video-description{
+        padding: 0 10px;
+    }
 }
 
 .shorts-video{
